@@ -1,10 +1,31 @@
 Hello World
 <style>
     .font {
-        font: Oxygen;
-        size: 12px;
+        font: lato;
+        font-size: 32px;
         text-align: center;
         color: red;
+    }
+    .topnav {
+        background-color: blue;
+        overflow: hidden;
+        width: 100%;
+    }
+    .topnav a {
+        float: left;
+        color: greenyellow;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav a:hover {
+        background-color: yellow;
+        color: black;
+    }
+    .topnav a.active {
+        background-color: orange;
+        color: black;
     }
     body {
         background-image: url("nature.jpg");
@@ -12,13 +33,18 @@ Hello World
 </style>
 <html lang="en">
     <head>
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="#News">News</a>
+            <a href="#contact">News</a>
+            <a href="#about">News</a>
+        </div>
         <meta charset="utf-8">
         <title>Edwin's Personal Site</title>
     </head>
     <body>
-        <br />
         <h3>
-            <div class="font">EDWIN'S SITE</div>
+        <div class="font">EDWIN'S SITE</div>
         </h3>
     </body>
 </html>
